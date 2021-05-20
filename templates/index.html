@@ -8,20 +8,25 @@
 <body>
     <div class="main-container">
         <div id="main-title-container">
-            <h1 id="main-title">Vælg det navn du bedst kan lide</h1>
+            <h1 id="main-title">Vælg dit favorit navn</h1>
         </div>
         <div class="names-container">
-            <a href="index.html">
-            <div class="name-container">
-                <h1 class="name-title">Peter</h1>
+            <div class="name-container" id="name1">
+                <h1 class="name-title">{{ name1 }}</h1>
             </div>
+            <div class="name-container" id="name2">
+                <h1 class="name-title">{{ name2 }}</h1>
+            </div>
+            <div class="name-container" id="name3">
+                <h1 class="name-title">{{ name3 }}</h1>
+            </div>
+        </div>
+        <div id="next-button-container">
+            <a href="{{ url_for('index') }}">
+                <div id="next-button">
+                    <h2>Næste</h2>
+                </div>
             </a>
-            <div class="name-container">
-                <h1 class="name-title">John</h1>
-            </div>
-            <div class="name-container">
-                <h1 class="name-title">Henning</h1>
-            </div>
         </div>
     </div>
 </body>

@@ -2,11 +2,11 @@ import os
 import csv
 import random
 
-names_dir = "static/names/"
-
 
 def get_names_starting_with(letter):
-    csv_file = open(f"{os.path.join(names_dir, letter)}.csv", "r")
+    names_dir = '/home/simon/projects/name-game-shuffle/static/names'
+    fp = os.path.abspath(names_dir)
+    csv_file = open(f"{os.path.join(fp, letter)}.csv", "r")
     reader = csv.reader(csv_file)
     names = []
     for name in reader:
