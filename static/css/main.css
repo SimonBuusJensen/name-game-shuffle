@@ -63,6 +63,10 @@ body {
     float: left;
 }
 
+.header-element a h3:hover {
+    color: #019BE5;
+}
+
 a #logo {
     height: 99px;
     width: 99px;
@@ -159,5 +163,8 @@ a #logo {
 
 #forward-button-container {
     margin-left: 5%;
+}
+
+#save-button-container {
 }
 

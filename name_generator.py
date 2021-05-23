@@ -25,4 +25,5 @@ def get_names(letters="abcdefghijklmnopqrstuvxyzøå"):
     for letter in letters:
         for n in get_names_starting_with(letter):
             names.append(n)
+    random.shuffle(names)
     return names
