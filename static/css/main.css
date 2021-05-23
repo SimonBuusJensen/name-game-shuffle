@@ -33,7 +33,7 @@ body {
     text-align: center;
     width: 60%;
     height: 60%;
-    background-color: #F6F8FA;
+    background-color: #F6F5FA;
     border-radius: 10px;
 }
 
@@ -46,7 +46,7 @@ body {
 }
 
 #main-title {
-
+    font-size: xxx-large;
 }
 
 .names-container {
@@ -68,14 +68,12 @@ body {
 
     border: black solid;
     border-radius: 4px;
-    background-color: #F6F5FA;
-
+    background-color: #E1ECF4;
 }
 
 .name-container:hover {
-  box-shadow: 0 0 20px rgba(33,33,35,1);
+    box-shadow: 0 0 20px rgba(33,33,35,1);
 }
-
 
 #next-button-container {
     height: 150px;
@@ -97,8 +95,8 @@ body {
     align-content: center;
     flex-direction: column;
 
-    background-color: #F6F5FA;
-    border: solid black 1px;
+    background-color: #E1ECF4;
+    border: solid black 2px;
     border-radius: 4px;
 }
 
