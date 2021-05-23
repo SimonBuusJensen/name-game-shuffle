@@ -2,8 +2,10 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Navne leg</title>
     <link rel="stylesheet" href="{{ url_for('static', filename='css/main.css') }}">
+
 </head>
 <body>
     <div class="main-container">
@@ -12,21 +14,23 @@
         </div>
         <div class="names-container">
             <div class="name-container" id="name1">
-                <h1 class="name-title">{{ name1 }}</h1>
+                <h2 class="name-title">{{ name1 }}</h2>
             </div>
             <div class="name-container" id="name2">
-                <h1 class="name-title">{{ name2 }}</h1>
+                <h2 class="name-title">{{ name2 }}</h2>
             </div>
             <div class="name-container" id="name3">
-                <h1 class="name-title">{{ name3 }}</h1>
+                <h2 class="name-title">{{ name3 }}</h2>
             </div>
         </div>
-        <div id="next-button-container">
-            <a href="{{ url_for('index') }}">
-                <div id="next-button">
-                    <h2>Næste</h2>
-                </div>
-            </a>
+        <div id="button-container">
+            <div id="next-button-container">
+                <a href="{{ url_for('index') }}">
+                    <div id="next-button">
+                        <h2>Næste</h2>
+                    </div>
+                </a>
+            </div>
         </div>
     </div>
 </body>
