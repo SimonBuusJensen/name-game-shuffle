@@ -8,6 +8,24 @@
 
 </head>
 <body>
+<div class="header-container">
+    <ul>
+
+        <a href="{{ url_for('index') }}">
+            <img id="logo" src="{{ url_for('static', filename='imgs/baby-logos.jpg') }}" alt="logo">
+        </a>
+
+        <li class="header-element">
+            <h3>Favoritter</h3>
+        </li>
+        <li class="header-element">
+            <h3>Inspiration</h3>
+        </li>
+        <li class="header-element">
+            <h3>Om</h3>
+        </li>
+    </ul>
+</div>
 <div class="main-container">
     <div id="main-title-container">
         <h1 id="main-title">Klik på din favorit</h1>
@@ -29,7 +47,7 @@
         <div id="next-button-container">
             <a href="{{ url_for('index') }}">
                 <div id="next-button">
-                    <h2>Næste</h2>
+                    <h2>Shuffle</h2>
                 </div>
             </a>
         </div>
