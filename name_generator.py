@@ -4,7 +4,7 @@ import random
 
 
 def get_names_starting_with(letter):
-    names_dir = '/home/simon/projects/name-game-shuffle/static/names'
+    names_dir = './static/navne/drenge-navne'
     fp = os.path.abspath(names_dir)
     csv_file = open(f"{os.path.join(fp, letter)}.csv", "r")
     reader = csv.reader(csv_file)
