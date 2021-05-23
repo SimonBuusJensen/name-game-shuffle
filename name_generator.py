@@ -18,3 +18,11 @@ def select_random_name_from_list(names):
     random_index = random.randint(0, len(names) - 1)
     randomly_selected_name = names[random_index]
     return randomly_selected_name
+
+
+def get_names(letters="abcdefghijklmnopqrstuvxyzøå"):
+    names = []
+    for letter in letters:
+        for n in get_names_starting_with(letter):
+            names.append(n)
+    return names

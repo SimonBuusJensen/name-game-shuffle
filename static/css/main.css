@@ -51,8 +51,9 @@ body {
 
 .header-element {
     /*display: table-column;*/
-    width: 10%;
+    width: 15%;
     height: 100px;
+    margin: 0 0 0 5%;
 
     display: flex;
     justify-content: center;
@@ -70,7 +71,7 @@ a #logo {
 }
 
 .main-container {
-    margin: 10% 30% 20% 20%;
+    margin: 5% 30% 5% 20%;
     text-align: center;
     width: 60%;
     height: 60%;
@@ -113,34 +114,50 @@ a #logo {
 }
 
 .name-container:hover {
-    box-shadow: 0 0 20px rgba(33,33,35,1);
+    box-shadow: 0 0 20px rgba(33, 33, 35, 1);
 }
 
-#next-button-container {
+.activated {
+    background-color: #F1F9D9;
+}
+
+.non-activated {
+    background-color: darkred;
+}
+
+#buttons-container {
     height: 150px;
     width: 100%;
+    padding: 20px 30% 0 30%;
 
-    display: flex;
+    display: table;
     justify-content: center;
     align-content: center;
     flex-direction: column;
 }
 
-#next-button {
+.forward-backward-button {
     height: 50px;
-    width: 20%;
-    margin: 0 40%;
-
+    width: 30%;
     display: flex;
+    float: left;
     justify-content: center;
     align-content: center;
     flex-direction: column;
 
-    background-color: #F6F5FA;
-    border: solid black 2px;
+    background-color: #029BE5;
     border-radius: 4px;
 }
 
-#next-button:hover {
+.forward-backward-button:hover {
   box-shadow: 0 0 5px rgba(33,33,35,1);
 }
+
+#backward-button-container {
+    margin-right: 5%;
+}
+
+#forward-button-container {
+    margin-left: 5%;
+}
+

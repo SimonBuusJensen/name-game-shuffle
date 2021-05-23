@@ -5,24 +5,28 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Navne leg</title>
     <link rel="stylesheet" href="{{ url_for('static', filename='css/main.css') }}">
-
+    <script src="{{ url_for('static', filename='js/index.js') }}"></script>
 </head>
 <body>
 <div class="header-container">
     <ul>
-
         <a href="{{ url_for('index') }}">
             <img id="logo" src="{{ url_for('static', filename='imgs/baby-logos.jpg') }}" alt="logo">
         </a>
-
         <li class="header-element">
-            <h3>Favoritter</h3>
+            <a href="{{ url_for('index') }}">
+                <h3>Favoritter</h3>
+            </a>
         </li>
         <li class="header-element">
-            <h3>Inspiration</h3>
+            <a href="{{ url_for('index') }}">
+                <h3>Inspiration</h3>
+            </a>
         </li>
         <li class="header-element">
-            <h3>Om</h3>
+            <a href="{{ url_for('index') }}">
+                <h3>Om</h3>
+            </a>
         </li>
     </ul>
 </div>
@@ -31,26 +35,46 @@
         <h1 id="main-title">Klik på din favorit</h1>
     </div>
     <div class="names-container">
-        <div class="name-container" onclick="location.href='#'" id="name1">
+        <div class="name-container" id="name1" onclick="activate(this.id)">
             <h2 class="name-title">{{ name1 }}</h2>
         </div>
 
-        <div class="name-container" id="name2">
+        <div class="name-container" id="name2" onclick="activate(this.id)">
             <h2 class="name-title">{{ name2 }}</h2>
         </div>
 
-        <div class="name-container" id="name3">
+        <div class="name-container" id="name3" onclick="activate(this.id)">
             <h2 class="name-title">{{ name3 }}</h2>
         </div>
     </div>
-    <div id="button-container">
-        <div id="next-button-container">
-            <a href="{{ url_for('index') }}">
-                <div id="next-button">
-                    <h2>Shuffle</h2>
+    <div id="buttons-container">
+        <a href="{{ url_for('backward') }}">
+            <div id="backward-button-container" class="forward-backward-button">
+
+                <div id="backward-button">
+                    <h2>Forrige</h2>
                 </div>
-            </a>
-        </div>
+
+            </div>
+        </a>
+        <a href="{{ url_for('forward') }}">
+            <div id="save-button-container" class="forward-backward-button">
+
+                <div id="save-button">
+                    <h2>Gem</h2>
+                </div>
+
+            </div>
+        </a>
+        <a href="{{ url_for('forward') }}">
+            <div id="forward-button-container" class="forward-backward-button">
+
+                <div id="forward-button">
+                    <h2>Næste</h2>
+                </div>
+
+            </div>
+        </a>
     </div>
 </div>
 </body>
