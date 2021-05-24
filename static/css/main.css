@@ -37,7 +37,7 @@ body {
 .header-container {
     height: 100px;
     width: 100%;
-    padding: 0 20% 0 20%;
+    padding: 0 25% 0 25%;
 
     display: flex;
     justify-content: center;
@@ -53,14 +53,14 @@ body {
     /*display: table-column;*/
     width: 15%;
     height: 100px;
-    margin: 0 0 0 5%;
+    margin: 0 0 0 2%;
 
     display: flex;
     justify-content: center;
     align-content: center;
     flex-direction: column;
 
-    float: left;
+    float: right;
 }
 
 .header-element a h3:hover {
@@ -75,35 +75,34 @@ a #logo {
 }
 
 .main-container {
-    margin: 5% 30% 5% 20%;
+    margin: 5% 25% 5% 25%;
     text-align: center;
-    width: 60%;
-    height: 60%;
+    width: 50%;
     background-color: #E7E9EB;
     border-radius: 10px;
 }
 
-#main-title-container {
-    height: 150px;
+.title-container {
+    height: 100px;
     display: flex;
     justify-content: center;
     align-content: center;
     flex-direction: column;
 }
 
-#main-title {
-    font-size: xxx-large;
+.title {
+    font-size: xx-large;
 }
 
 .names-container {
     display: table;
     width: 100%;
-    height: 300px;
+    height: 250px;
 }
 
 .name-container {
     width: 20%;
-    height: 200px;
+    height: 150px;
     margin: 50px 0 0 10%;
 
     float: left;
@@ -112,8 +111,8 @@ a #logo {
     align-content: center;
     flex-direction: column;
 
-    border: black solid;
-    border-radius: 10px;
+    border: black solid 2px;
+    border-radius: 5px;
     background-color: #F6F5FA;
 }
 
@@ -130,9 +129,9 @@ a #logo {
 }
 
 #buttons-container {
-    height: 150px;
+    height: 100px;
     width: 100%;
-    padding: 20px 30% 0 30%;
+    padding: 10px 30% 0 30%;
 
     display: table;
     justify-content: center;
@@ -165,6 +164,43 @@ a #logo {
     margin-left: 5%;
 }
 
-#save-button-container {
+
+
+#favorits-container {
+    height: auto;
+    margin: 0 25% 0 25%;
+
+
+    background-color: #E7E9EB;
+
+
+}
+
+#favorits-title-container {
+
+}
+
+#favorits-names-container {
+    display: table;
+    width: 100%;
+    height: 300px;
+    background-color: #E7E9EB;
+
+}
+
+.favorits-name-container {
+    width: 20%;
+    height: 150px;
+    margin: 50px 0 0 4%;
+
+    float: left;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    flex-direction: column;
+
+    border: black solid 2px;
+    border-radius: 5px;
+    background-color: #F6F5FA;
 }
 

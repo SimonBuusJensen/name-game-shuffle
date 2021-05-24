@@ -15,12 +15,7 @@
         </a>
         <li class="header-element">
             <a href="{{ url_for('index') }}">
-                <h3>Favoritter</h3>
-            </a>
-        </li>
-        <li class="header-element">
-            <a href="{{ url_for('index') }}">
-                <h3>Inspiration</h3>
+                <h3>Login</h3>
             </a>
         </li>
         <li class="header-element">
@@ -28,16 +23,11 @@
                 <h3>Om</h3>
             </a>
         </li>
-        <li class="header-element">
-            <a href="{{ url_for('index') }}">
-                <h3>login</h3>
-            </a>
-        </li>
     </ul>
 </div>
 <div class="main-container">
-    <div id="main-title-container">
-        <h1 id="main-title">Klik på din favorit</h1>
+    <div class="title-container">
+        <h1 class="title">Klik og gem dine favoritter</h1>
     </div>
     <div class="names-container">
         <div class="name-container" id="name1" onclick="activate(this.id)">
@@ -62,7 +52,7 @@
 
             </div>
         </a>
-        <a href="{{ url_for('forward') }}">
+        <a href="{{ url_for('save') }}">
             <div id="save-button-container" class="forward-backward-button">
 
                 <div id="save-button">
@@ -78,6 +68,25 @@
                 </div>
             </div>
         </a>
+    </div>
+</div>
+<div id="favorits-container" class="main-container">
+    <div class="title-container">
+        <h1 class="title">Gemte Favoritter</h1>
+    </div>
+    <div id="favorits-names-container">
+        <div class="favorits-name-container" id="name1" onclick="activate(this.id)">
+            <h2 class="name-title">TEST</h2>
+        </div>
+        <div class="favorits-name-container" id="name1" onclick="activate(this.id)">
+            <h2 class="name-title">TEST</h2>
+        </div>
+        <div class="favorits-name-container" id="name1" onclick="activate(this.id)">
+            <h2 class="name-title">TEST</h2>
+        </div>
+        <div class="favorits-name-container" id="name1" onclick="activate(this.id)">
+            <h2 class="name-title">TEST</h2>
+        </div>
     </div>
 </div>
 </body>

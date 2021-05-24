@@ -41,5 +41,11 @@ def forward():
     return render_template('index.html', name1=selected_names[0], name2=selected_names[1], name3=selected_names[2])
 
 
+@app.route('/save')
+def save():
+    selected_names = names[name_index:name_index + 3]
+    return render_template('index.html', name1=selected_names[0], name2=selected_names[1], name3=selected_names[2])
+
+
 if __name__ == '__main__':
     app.run()
